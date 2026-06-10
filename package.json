@@ -1,0 +1,19 @@
+{
+  "name": "playwright-saucedemo",
+  "version": "1.0.0",
+  "description": "Playwright E2E test suite for SauceDemo — portfolio project demonstrating QA engineering skills",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:inventory": "playwright test tests/inventory.spec.ts",
+    "test:checkout": "playwright test tests/checkout.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.19.42",
+    "typescript": "^5.0.0"
+  }
+}
